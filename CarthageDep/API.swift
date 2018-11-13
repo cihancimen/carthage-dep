@@ -9,6 +9,15 @@
 import Foundation
 
 public struct Constants {
-    public static let greeting = "Test"
+    #if Debug
+    public static let greeting = "Debug greeting"
+    #else
+    public static let greeting = "Release greeting"
+    #endif
+}
+
+public func crash() -> String {
+    let message: String? = nil
+    return message!.debugDescription
 }
 
