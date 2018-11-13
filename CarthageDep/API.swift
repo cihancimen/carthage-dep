@@ -9,6 +9,6 @@
 import Foundation
 
 public struct Constants {
-    let message = "Test"
+    public let message = "Test"
 }
 
