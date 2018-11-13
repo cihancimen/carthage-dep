@@ -18,6 +18,7 @@ public struct Constants {
 
 public func crash() -> String {
     let message: String? = nil
+    print("Ooh, wee are about to crash due to force unwrap!")
     return message!.debugDescription
 }
 
